@@ -42,7 +42,7 @@
             width: 200px;
             height: 200px;
             background-color: #4a4a4a;
-            background-image: url('/source/cauldron.png');
+            background-image: url('./source/cauldron.png');
             background-size: cover;
             border-radius: 50%;
             margin: 0 auto;
@@ -85,10 +85,10 @@
         <h1>할로윈 캐릭터 만들기</h1>
         <div id="game-content">
             <div class="items">
-                <img src="/source/spiderweb.png" alt="spiderweb" class="item" data-item="spiderweb">
-                <img src="/source/frog.png" alt="Frog" class="item" data-item="frog">
-                <img src="/source/mushroom.png" alt="Mushroom" class="item" data-item="mushroom">
-                <img src="/source/pumpkin.png" alt="Pumpkin" class="item" data-item="pumpkin">
+                <img src="./source/spiderweb.png" alt="spiderweb" class="item" data-item="spiderweb">
+                <img src="./source/frog.png" alt="Frog" class="item" data-item="frog">
+                <img src="./source/mushroom.png" alt="Mushroom" class="item" data-item="mushroom">
+                <img src="./source/pumpkin.png" alt="Pumpkin" class="item" data-item="pumpkin">
             </div>
             <div id="cauldron"></div>
         </div>
@@ -151,10 +151,10 @@
 
         function createCharacter(item) {
             const characters = {
-                spiderweb: { name: '친절한 이웃 스파이더맨', image: '/source/spiderman.png' },
-                frog: { name: '깔깔 마녀', image: '/source/witch.png' },
-                mushroom: { name: '유~~~령', image: '/source/ghost.png' },
-                pumpkin: { name: '여우 Nick', image: '/source/wolf.png' }
+                spiderweb: { name: '친절한 이웃 스파이더맨', image: './source/spiderman.png' },
+                frog: { name: '깔깔 마녀', image: './source/witch.png' },
+                mushroom: { name: '유~~~령', image: './source/ghost.png' },
+                pumpkin: { name: '여우 Nick', image: './source/wolf.png' }
             };
             return characters[item];
         }
